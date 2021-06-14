@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const bcrypt = require('bcrypt');
 const {User} = require('../models/user');
 const {validationResult} = require('express-validator');
@@ -74,7 +75,7 @@ router.post('/signin' , async(req , res) => {
         if(passwordMatch) {
 
             // send a JWT token upon successful authentication
-            const token = jwt.sign({username : findUser.username} , 'jwtPvtKey' , {
+            const token = jwt.sign({username : findUser.username} , process.env.PRIVATE_KEY , {
                 expiresIn: 60
             });
             res.cookie("jwt", token, {secure: true, httpOnly: true});

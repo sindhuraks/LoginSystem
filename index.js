@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
+require('dotenv').config({path : './custom-env-variables.env'});
 const users = require('./routes/users');
 const express = require('express');
 const app = express();
 
 // check connection to MongoDB database
-mongoose.connect('mongodb://localhost:27017/users' , {
+mongoose.connect(process.env.DB_URI , {
         useNewUrlParser: true,
         useCreateIndex: true,
         useUnifiedTopology: true
