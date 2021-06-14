@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.left {
+    left: 0;
+    background-image: linear-gradient(#96E9B4,#00847E);
+    /*background-image: url('./public/images/bg.jpeg');*/
+}
+
+.layer {
+    position: absolute;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.layer h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: larger;
+    color: white;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.layer h5 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: larger;
+    color: white;
+    font-style: italic;
+    font-family: serif;
+}
+
+.layer p {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.right {
+    right: 0;
+    background-color: white;
+}
+
+.left,.right {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+}
+
+#signinBtn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 20%;
+    padding: 10px 30px;
+    border-color: white;
+    border-radius: 12px;
+    font-size: large;
+    color: white;
+}
+
+#signinBtn:hover {
+    background-color: rgba(0, 0, 0,1.0);
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+    margin: auto;
+    padding: 5px 200px;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#username,#mail,#pswd,#rep-pswd {
+    
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background-color:#f1f1f1;
+}
+
+#signupBtn {
+
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    margin: 30px 150px;
+    display: inline-block;
+    position: relative;
+    transform: translate(-50%, -50%);
+    padding: 10px 12px;
+    font-size: 15px;
+    width: 54%;
+}
+
+#signupBtn:hover {
+    background-color: rgb(22, 139, 26);
+}
+
+#message {
+    font-size: 12px;
+    display: none;
+}
+
+.invalid {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
+
+#togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+    color: grey;
+}
+
+#toggleRepeatPassword {
+    margin-left: -30px;
+    cursor: pointer;
+    color: grey;
+}
+
+.disp_err {
+    color: red;
+    font-size: 12px;
+}
+
+
+
+
+
